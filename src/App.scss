@@ -1,0 +1,10 @@
+// TODO optimize loading only specific css per included components
+@import '~antd/dist/antd.css';
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
