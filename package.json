@@ -7,6 +7,7 @@
     "build": "craco build",
     "test": "craco test",
     "test:coverage": "craco test --coverage",
+    "format:fix": "pretty-quick --staged",
     "tsc": "tsc"
   },
   "dependencies": {
@@ -20,9 +21,12 @@
     "@testing-library/user-event": "13.1.5",
     "antd": "4.15.3",
     "axios": "0.21.1",
+    "husky": "^6.0.0",
     "lodash": "4.17.21",
     "mobx": "6.1.7",
     "mobx-react-lite": "3.2.0",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-intersection-observer": "8.31.1",
@@ -62,5 +66,10 @@
   },
   "jest": {
     "resetMocks": false
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "format:fix && yarn test"
+    }
   }
 }
