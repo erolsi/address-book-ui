@@ -151,6 +151,10 @@ To run test with test coverage, run
 $ yarn test:coverage
 ```
 
+## Code style
+
+Code style follows [prettier](https://prettier.io) configuration `.prettierrc` with pre-commit hook to format the code. For hooks we use [husky](https://github.com/typicode/husky).
+
 ## TODO
 
 For application to be even better, we recommend
